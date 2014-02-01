@@ -1,4 +1,4 @@
-mosquito-lite
+mosquitto-lite
 =============
 
 a minimal runtime only docker encapsulation of the mosquitto mqtt broker available at  http://mosquitto.org
