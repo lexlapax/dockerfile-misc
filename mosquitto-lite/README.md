@@ -43,3 +43,9 @@ create new image from Dockerfile
 enjoy
 
 
+the image built this way is tiny
+
+
+> $ docker images
+> REPOSITORY              TAG                 IMAGE ID            CREATED             VIRTUAL SIZE
+> lapax/mosquitto-lite    latest              1a4fcff8c0d2        3 minutes ago       8.041 MB
