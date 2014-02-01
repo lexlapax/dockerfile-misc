@@ -5,6 +5,6 @@
 FROM lapax/buildroot:mosquitto
 MAINTAINER Lex Lapax <lexlapax@gmail.com>
 
-RUN adduser --system --disabled-password --disabled-login mosquitto
+RUN adduser -S -H -D -s /bin/false mosquitto
 EXPOSE 1883
 ENTRYPOINT ["/usr/sbin/mosquitto"]
