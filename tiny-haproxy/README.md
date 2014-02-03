@@ -5,6 +5,10 @@ this file is available at
 
 https://github.com/lexlapax/Dockerfiles/blob/master/tiny-haproxy/README.md
 
+is most likely also available as an untrusted docker image (for now) 
+
+at https://index.docker.io/u/lapax/tiny-haproxy/ for testing purposes 
+
 
 description
 -----------
