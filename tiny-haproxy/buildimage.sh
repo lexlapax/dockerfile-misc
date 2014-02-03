@@ -32,11 +32,14 @@ make all
 # This means that /sbin/init should be a regular file as well. By default, 
 # buildroot makes it a symlink to busybox. We will change that, too.
 
-mkdir -p output/images/fixup/sbin output/images/fixup/etc output/images/fixup/share/haproxy
+mkdir -p output/images/fixup/sbin output/images/fixup/etc 
+touch output/images/fixup/sbin/init output/images/fixup/etc/resolv.conf
+
+# while you're at it, add the haproxy samples,. etc.. as well
+mkdir -p output/images/fixup/share/haproxy
 cp -r output/build/haproxy-$HAPROXY_VERSION/examples output/images/fixup/share/haproxy/
 cp -r output/build/haproxy-$HAPROXY_VERSION/VER* output/images/fixup/share/haproxy/
 
-touch output/images/fixup/sbin/init output/images/fixup/etc/resolv.conf
 
 cd output/images
 cp root.tar fixup.tar
