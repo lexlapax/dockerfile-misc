@@ -15,6 +15,10 @@ HAPROXY_LIB_GCC_OPT = -I$(@D)/include -I$(@D)/ebtree -Wall -O2 -g -fno-strict-al
 
 HAPROXY_MAIN_GCC_OPT = -I$(@D)/include -I$(@D)/ebtree -Wall -O2 -g -fno-strict-aliasing -DENABLE_POLL -DCONFIG_HAPROXY_VERSION=\"$(HAPROXY_VERSION)\" -DCONFIG_HAPROXY_DATE=\"2013/06/17\" -DBUILD_TARGET='"lin2628"' -DBUILD_ARCH='""' -DBUILD_CPU='"generic"' -DBUILD_CC='"gcc"' -DBUILD_CFLAGS='"-O2 -g -fno-strict-aliasing"' -DBUILD_OPTIONS='"USE_POLL=default"'
 
+# this is a long drawn out #hack just to make it work for my circumstances... 
+# it works for me because of the choices i made, 
+# but is not the right way to to do buildroot packages
+
 define HAPROXY_BUILD_CMDS
 	$(TARGET_MAKE_ENV) $(TARGET_CC) $(HAPROXY_MAIN_GCC_OPT) -c -o $(@D)/src/haproxy.o $(@D)/src/haproxy.c
 	$(TARGET_MAKE_ENV) $(TARGET_CC) $(HAPROXY_LIB_GCC_OPT) -c -o $(@D)/src/sessionhash.o $(@D)/src/sessionhash.c
