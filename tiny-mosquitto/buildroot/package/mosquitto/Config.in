@@ -1,0 +1,8 @@
+config BR2_PACKAGE_MOSQUITTO
+	bool "mosquitto"
+	select BR2_PACKAGE_OPENSSL
+	help
+	  Mosquitto is an open source implementation of a server for version 3.1 of the
+          MQTT protocol.
+	  Mosquitto project information is available at the following locations:
+	  http://mosquitto.org/ (main homepage)
