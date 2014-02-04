@@ -24,7 +24,7 @@ http://blog.docker.io/2013/06/create-light-weight-docker-containers-buildroot/
 
 the buildroot directory contains the .config file used for running the build.
 
-the buildroot/package/haproxy contains the two required files to include mosquitto into the buildroot build
+the buildroot/package/haproxy contains the two required files to include haproxy into the buildroot build
 
 
 short instructions 
