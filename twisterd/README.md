@@ -22,12 +22,14 @@ allows rpc from *any* host by default, if not desired, the "rpcallowip" value ca
 
 after starting with something like
 
-docker run -d -name twisterd lapax/twisterd
+	docker run -d -name twisterd lapax/twisterd
 
 you can access the html interface using a browser at
+
 	http://<dockercontainerip>:28332/index.html
 
 for <dockercontainerip> you could do
+
 	docker inspect -format '{{ .NetworkSettings.IPAddress }}' twisterd
 
 follow instructions from http://twister.net.co/?page_id=23 and http://twister.net.co/?page_id=29
