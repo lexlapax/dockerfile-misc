@@ -25,8 +25,8 @@ http://blog.docker.io/2013/06/create-light-weight-docker-containers-buildroot/
 the buildroot directory contains the .config file used for running the build.
 
 the buildroot/package/haproxy contains the two required files to include haproxy into the buildroot build
-
-
+image includes sshd 
+image also includes pythonbased supervisord to help start up sshd and haproxy
 short instructions 
 ------------------
 (the full instructions are in the buildimage.sh file)
@@ -36,6 +36,7 @@ download buildroot
 git clone this repo
 
 copy buildroot config and haproxy build instructions from git clone to buildroot directory
+insert haproxy build instructions into package/Config.in
 
 build root image
 

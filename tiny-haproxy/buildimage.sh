@@ -11,6 +11,7 @@ wget http://buildroot.uclibc.org/downloads/buildroot-$BUILDROOTVER.tar.gz
 tar -xzvf buildroot-$BUILDROOTVER.tar.gz
 git clone https://github.com/lexlapax/Dockerfiles
 cp -r Dockerfiles/tiny-haproxy/package/haproxy buildroot-$BUILDROOTVER/package/
+echo 'source "package/haproxy/Config.in"' >> package/Config.ini
 cp Dockerfiles/tiny-haproxy/buildroot.config buildroot-$BUILDROOTVER/.config
 cd buildroot-$BUILDROOTVER
 make all
