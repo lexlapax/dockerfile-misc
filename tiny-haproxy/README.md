@@ -26,8 +26,11 @@ the buildroot directory contains the .config file used for running the build.
 
 the buildroot/package/haproxy contains the two required files to include haproxy into the buildroot build
 image includes sshd 
-image also includes pythonbased supervisord to help start up sshd and haproxy
-short instructions 
+
+~~image also includes python based supervisord to help start up sshd and haproxy~~ -- not quite yet - todo
+
+
+short instructions
 ------------------
 (the full instructions are in the buildimage.sh file)
 
