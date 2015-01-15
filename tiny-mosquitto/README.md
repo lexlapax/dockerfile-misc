@@ -12,7 +12,7 @@ a minimal runtime only docker encapsulation of the mosquitto mqtt broker availab
 
 currently uses http://mosquitto.org/files/source/mosquitto-1.3.5.tar.gz
 
-this is built using buildroot v14.11 http://buildroot.uclibc.org/ in order to make the image small.
+this is built using buildroot v14.05 http://buildroot.uclibc.org/ in order to make the image small.
 
 the docker image was built with instructions from 
 
