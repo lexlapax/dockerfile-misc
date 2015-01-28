@@ -1,4 +1,4 @@
-mosquitto-lite
+tiny-mosquitto
 ==============
 
 this file is available at
@@ -8,11 +8,11 @@ https://github.com/lexlapax/Dockerfiles/blob/master/tiny-mosquitto/README.md
 
 description
 -----------
-a minimal runtime only docker encapsulation of the mosquitto mqtt broker available at  http://mosquitto.org
+a minimal runtime only docker encapsulation of the mosquitto mqtt broker available at http://mosquitto.org
 
-currently uses http://mosquitto.org/files/source/mosquitto-1.2.3.tar.gz
+currently uses http://mosquitto.org/files/source/mosquitto-1.3.5.tar.gz
 
-this is built using buildroot http://buildroot.uclibc.org/ in order to make the image small.
+this is built using buildroot v14.05 http://buildroot.uclibc.org/ in order to make the image small.
 
 the docker image was built with instructions from 
 
