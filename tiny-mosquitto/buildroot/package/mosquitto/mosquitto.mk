@@ -4,7 +4,7 @@
 #
 ################################################################################
 
-MOSQUITTO_VERSION = 1.3.5
+MOSQUITTO_VERSION = 1.4.2
 MOSQUITTO_SOURCE = mosquitto-$(MOSQUITTO_VERSION).tar.gz
 MOSQUITTO_SITE = http://mosquitto.org/files/source/$(MOSQUITTO_SOURCE)
 MOSQUITTO_DEPENDENCIES = openssl zlib
